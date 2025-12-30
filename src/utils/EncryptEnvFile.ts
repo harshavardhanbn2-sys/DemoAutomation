@@ -13,7 +13,7 @@ if (process.env.NODE_ENV) {
   envFilePath = `${configDir}\\.env.${process.env.NODE_ENV}`;
 }
 
-//console.log(envFilePath);
+console.log(envFilePath);
 
 export function encryptEnvFile() {
   const SALT = process.env.SALT || "defaultSALT";
